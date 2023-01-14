@@ -9,19 +9,30 @@
     <title>Document</title>
 </head>
 <body>
+    <h3 style="color: black;">
+        The form only authenticates usernames 
+        and passwords, that exist in the <a target="_blank" href="/admin">admin</a>
+        panel
+        the username for the admin panel is "admin"
+        and the password is "password".
+    </h3>
     <div class="loginContainer">
         <form action="{% url 'login' %}" method="post">
             {% csrf_token %}
             <h1>Login</h1>
             <div class="relativeDiv">
+                {% if error %}
+                <p style="color: lightcoral;">{{ error }}</p>
+                {% endif %}
                 <div class="inputsDiv">
-                    <input type="text" placeholder="email..." name='email'>
+                    <input required type="text" placeholder="username" name='email'>
                     <br><br>
-                    <input type="text" placeholder="password" name= 'password'>
+                    <input required type="password" placeholder="password" name= 'password'>
                     <br><br><br><br>
                     <button>Login</button>
                     <p class="hint" >The username is <b>admin</b> and the password is <b>password</b></p>
                 </div>
+                
             </div>
         </form>
     </div>

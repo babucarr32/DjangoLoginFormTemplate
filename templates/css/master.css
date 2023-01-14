@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-    font-family: tangerine;
+    font-family: tangerine, 'Courier New', Courier, monospace;
     font-size: 6vw;
     font-weight: bolder;
 }
