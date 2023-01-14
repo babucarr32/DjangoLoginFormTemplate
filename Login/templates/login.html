@@ -10,13 +10,14 @@
 </head>
 <body>
     <div class="loginContainer">
-        <form action="" method="post">
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
             <h1>Login</h1>
             <div class="relativeDiv">
                 <div class="inputsDiv">
-                    <input type="text" placeholder="email...">
+                    <input type="text" placeholder="email..." name='email'>
                     <br><br>
-                    <input type="text" placeholder="password">
+                    <input type="text" placeholder="password" name= 'password'>
                     <br><br><br><br>
                     <button>Login</button>
                 </div>
