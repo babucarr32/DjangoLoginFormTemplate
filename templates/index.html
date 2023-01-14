@@ -1,17 +1,26 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome</h1>
-    <div class="buttonDiv">
-        <a href="login/">
-            <button>Login</button>
-        </a>
+    <div class="centerElements">
+        <div class="center">
+            <h1>welcome To My website</h1>
+            <div class="buttonDiv">
+                <a href="login/">
+                    <button>Login</button>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
