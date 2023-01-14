@@ -44,3 +44,6 @@ button{
 button:hover{
     background-color: rgb(255, 255, 255);
 }
+.hint{
+    font-size: 10px;
+}
